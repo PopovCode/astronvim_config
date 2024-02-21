@@ -18,8 +18,8 @@ return {
     },
 
     -- Set colorscheme to use
-    -- colorscheme = "catppuccin",
-    colorscheme = "gruvbox",
+    colorscheme = "catppuccin",
+    -- colorscheme = "gruvbox",
 
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {virtual_text = true, underline = true},
