@@ -36,7 +36,23 @@ return {
         ["<leader>tn"] = {
             "<cmd> <cr>:w !node<cr>",
             desc = 'Run this jsfile from node'
+        },
+
+        ["<tab>"] = {
+            function()
+                require("astronvim.utils.buffer").nav(vim.v.count > 0 and
+                                                          vim.v.count or 1)
+            end,
+            desc = "Next buffer"
+        },
+        ["<S-tab>"] = {
+            function()
+                require("astronvim.utils.buffer").nav(
+                    -(vim.v.count > 0 and vim.v.count or 1))
+            end,
+            desc = "Previous buffer"
         }
+
         -- "<cmd>w<cr>", desc = "Save"
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
