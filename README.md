@@ -26,3 +26,10 @@ git clone https://github.com/PopovCode/astronvim_config ~/.config/nvim/lua/user
 ```shell
 nvim
 ```
+
+#### Hotkeys
+
+## Terminal
+
+ctrl+\ ctrl+n - go nterminal mode
+i - go to insert mode
